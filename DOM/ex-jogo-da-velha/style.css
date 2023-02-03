@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  :root {
+    --bg-color: #212529;
+    --bg-color-secondary: #2c2f31;
+    --font-color: #f1f5f9;
+    --border-color: #666;
+    --primary-color: #912250;
+    --secondary-color: #612B41;
+  }
+
+  body {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    font-family: "Ubuntu", sans-serif;
+  }
+
+  main {
+    display: block;
+    margin: 0 auto;
+    max-width: 40rem;
+    padding: 0 1.5rem;
+    position: relative;
+  }
+
+  header {
+    margin: 1rem 0 1rem 0 ;
+    padding: 2rem;
+    border-radius: .5rem;
+    background-color: var(--bg-color-secondary);
+  }
+
+  input {
+    background-color: var(--bg-color);
+    border: 2px solid var(--border-color);
+    border-radius: .5rem;
+    color: var(--font-color);
+    padding: .5rem;
+    transition: 200ms;
+    margin: .2rem;
+    font-size: 1rem;
+  }
+
+  input:focus {
+    border: 2px solid var(--primary-color);
+    outline: none;
+    transition: 200ms;
+  }
+
+  #themeSwitcher {
+    background-color: var(--bg-color-secondary);
+    border: .125rem solid var(--font-color);
+    color: var(--font-color);
+    border-radius: .25rem;
+    padding: .5rem;
+    transition: .15s;
+    font-weight: 600;
+  }
+
+  #themeSwitcher:hover {
+    cursor: pointer;
+    background-color: var(--font-color);
+    color: var(--bg-color);
+  }
+
+  #currentPlayer {
+    background-color: var(--bg-color-secondary);
+    border: none;
+    color: var(--font-color);
+    font-weight: 600;
+
+  }
+
+  .btnGame{
+    width: 7rem;
+    height: 7rem;
+    background-color: var(--bg-color-secondary);
+    border: 0;
+    border-radius: .5rem;
+    transition: .25s;
+    font-size: 5rem;
+    color: #f1f5f9;
+    
+  }
+
+  .btnGame:hover{
+    cursor: pointer;
+    background-color: var(--secondary-color);
+
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    width: 23rem;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top: 4rem;
+  }
+
+  .hide-content{
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.8s linear;
+    color: #f1f5f9
+  }
+
+  .popup-content{
+    width: 100%;
+    max-width: 40rem;
+    margin: 10% auto;
+    text-align: center;
+    font-size: 4rem
+  }
+
+  .btn-play{
+    background-color: rgba(0, 0, 0, 0);
+    border: .125rem solid #f1f5f9;
+    color: #f1f5f9;
+    border-radius: .25rem;
+    padding: .5rem;
+    transition: .15s;
+    font-weight: 600;
+  }
+
+  .btn-play:hover {
+    cursor: pointer;
+    background-color: #f1f5f9;
+    color: #212529;
+  }
+
+  .score{
+    width: 9rem;
+    max-width: 40rem;
+    margin: 10% auto;
+    margin-top: 1rem;
+    text-align: center;
+    display: none;
+  }
+
+  #score{
+    font-size: 2rem;
+    background-color: var(--font-color);
+    color: var(--bg-color);
+    border-radius: .4rem;
+    
+  }
+
+  .center {
+    position:relative;
+    left: 24%;
+  }
+
+  .centerone {
+    margin-top: 2rem;
+
+  }
+
+  .text{
+    font-weight: 600;
+    font-size: 1.5rem;
+
+  }
+
+  .flex {
+    display: flex;
+  }
+  
+  .align-center {
+    align-items: center;
+  }
+  
+  .justify-between {
+    justify-content: space-between;
+  }

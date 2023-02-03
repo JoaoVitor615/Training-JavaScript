@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--links-->
+    <link rel="stylesheet" href="./style.css"> 
+    <script src="./index.js" defer></script>
+
+    <!--fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Bloco de Notas</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Lista de Compras</h1>
+            <hr>
+        </header>
+        <section class="buttonSection">
+            <button id="btnAdd">+</button>
+        </section>
+        <div class="popup-wrapper">
+            <div class="popup">
+                <div class="popup-contet">
+                    <h2 class="center-text">Adicionar Item</h2>
+                    <form class="formProduct">
+                        <label for="name">Nome do produto</label>
+                        <input name="name" type="text" id="inputName">
+                    </form>
+                    <button class="popup-close">Cancelar</button>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>
