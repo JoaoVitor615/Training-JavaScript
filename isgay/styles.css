@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('https://static.biologianet.com/2019/09/cavalo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 150px;
+}
+
+button {
+    padding: 1%;
+    border-radius: 8px;
+    border: none;
+    transition: .5s;
+}
+
+button:hover {
+    background-color: #ff00aa;
+    box-shadow: 2px 2px 8px #ff00aa;
+    transition: 300ms;
+    color: #fff;
+    cursor: pointer;
+}
