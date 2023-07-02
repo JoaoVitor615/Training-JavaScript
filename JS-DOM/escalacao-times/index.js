@@ -14,6 +14,7 @@ function addPlayer() {
             const player = document.createElement('li')
             player.id = 'player-' + numberPlayer
             player.innerText = positionPlayer + ": " + namePlayer + "(" + numberPlayer + ")"
+            player.dataset.name = namePlayer
             teamList.appendChild(player)
 
             document.getElementById('position').value = ""
@@ -32,7 +33,7 @@ function removePlayer() {
 
     if(player !== null){
 
-        const confirmation = confirm("Deseja excluir esse jogador da escalação?")
+        const confirmation = confirm(`Deseja excluir ${player.dataset.name} da escalação?`)
 
         if(confirmation) {
             teamList.removeChild(player)
